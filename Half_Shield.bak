@@ -1050,4 +1050,166 @@ F 3 "" H 4150 2800 50  0001 C CNN
 	1    4150 2850
 	1    0    0    -1  
 $EndComp
+$Comp
+L AP65111AWU-7:AP65111AWU-7 switching_regulator
+U 1 1 5C7022A7
+P 2550 5800
+F 0 "switching_regulator" H 2500 6370 50  0000 C CNN
+F 1 "AP65111AWU-7" H 2500 6279 50  0000 C CNN
+F 2 "SOT95P280X100-6N" H 2550 5800 50  0001 L BNN
+F 3 "https://www.digikey.com/product-detail/en/diodes-incorporated/AP65111AWU-7/AP65111AWU-7DICT-ND/7652826?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 2550 5800 50  0001 L BNN
+F 4 "AP65111AWU-7" H 2550 5800 50  0001 L BNN "Field4"
+F 5 "TSOT-23-6 Diodes Inc." H 2550 5800 50  0001 L BNN "Field5"
+F 6 "Dcdc Conv Hv Buck Tsot26 t&r 3k" H 2550 5800 50  0001 L BNN "Field6"
+F 7 "Diodes Inc." H 2550 5800 50  0001 L BNN "Field7"
+F 8 "AP65111AWU-7DICT-ND" H 2550 5800 50  0001 L BNN "Field8"
+	1    2550 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C7157B3
+P 1450 6300
+F 0 "#PWR?" H 1450 6050 50  0001 C CNN
+F 1 "GND" H 1455 6127 50  0000 C CNN
+F 2 "" H 1450 6300 50  0001 C CNN
+F 3 "" H 1450 6300 50  0001 C CNN
+	1    1450 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5C720CA1
+P 1450 5950
+F 0 "C1" H 1565 5996 50  0000 L CNN
+F 1 "22uF" H 1565 5905 50  0000 L CNN
+F 2 "" H 1488 5800 50  0001 C CNN
+F 3 "~" H 1450 5950 50  0001 C CNN
+	1    1450 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 5800 1450 5800
+Wire Wire Line
+	1450 6100 1450 6300
+Wire Wire Line
+	1450 5800 1150 5800
+Connection ~ 1450 5800
+$Comp
+L Device:R_US R3
+U 1 1 5C73B845
+P 1950 6200
+F 0 "R3" H 2018 6246 50  0000 L CNN
+F 1 "59kO" H 2018 6155 50  0000 L CNN
+F 2 "" V 1990 6190 50  0001 C CNN
+F 3 "~" H 1950 6200 50  0001 C CNN
+	1    1950 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 5900 1950 6050
+$Comp
+L Device:C C5
+U 1 1 5C744CEF
+P 3250 5500
+F 0 "C5" H 3365 5546 50  0000 L CNN
+F 1 "1uF" H 3365 5455 50  0000 L CNN
+F 2 "" H 3288 5350 50  0001 C CNN
+F 3 "~" H 3250 5500 50  0001 C CNN
+	1    3250 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 5800 3250 5800
+Wire Wire Line
+	3250 5800 3250 5650
+Wire Wire Line
+	3250 5350 3250 5150
+Wire Wire Line
+	3250 5150 1950 5150
+Wire Wire Line
+	1950 5150 1950 5500
+$Comp
+L Device:L L1
+U 1 1 5C75799A
+P 3650 5800
+F 0 "L1" V 3472 5800 50  0000 C CNN
+F 1 "6.5uH" V 3563 5800 50  0000 C CNN
+F 2 "" H 3650 5800 50  0001 C CNN
+F 3 "~" H 3650 5800 50  0001 C CNN
+	1    3650 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3250 5800 3500 5800
+Connection ~ 3250 5800
+$Comp
+L Device:R_US R2
+U 1 1 5C761B42
+P 3350 6300
+F 0 "R2" V 3145 6300 50  0000 C CNN
+F 1 "R_US" V 3236 6300 50  0000 C CNN
+F 2 "" V 3390 6290 50  0001 C CNN
+F 3 "~" H 3350 6300 50  0001 C CNN
+	1    3350 6300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3050 6000 3150 6000
+$Comp
+L Device:R_US R1
+U 1 1 5C76BA28
+P 3850 6150
+F 0 "R1" H 3918 6196 50  0000 L CNN
+F 1 "R_US" H 3918 6105 50  0000 L CNN
+F 2 "" V 3890 6140 50  0001 C CNN
+F 3 "~" H 3850 6150 50  0001 C CNN
+	1    3850 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 6350 1950 6600
+Wire Wire Line
+	1950 6600 3700 6600
+Wire Wire Line
+	3700 6600 3700 6300
+Wire Wire Line
+	3700 6300 3500 6300
+Wire Wire Line
+	3700 6300 3850 6300
+Connection ~ 3700 6300
+Wire Wire Line
+	3200 6000 3200 6300
+Wire Wire Line
+	3800 5800 3850 5800
+Wire Wire Line
+	3850 6000 3850 5800
+Connection ~ 3850 5800
+Wire Wire Line
+	3850 5800 4300 5800
+$Comp
+L Device:C C2
+U 1 1 5C7A0061
+P 4300 6150
+F 0 "C2" H 4415 6196 50  0000 L CNN
+F 1 "22uF" H 4415 6105 50  0000 L CNN
+F 2 "" H 4338 6000 50  0001 C CNN
+F 3 "~" H 4300 6150 50  0001 C CNN
+	1    4300 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6000 4300 5800
+Connection ~ 4300 5800
+Wire Wire Line
+	4300 5800 4400 5800
+Wire Wire Line
+	3150 6000 3150 6500
+Wire Wire Line
+	3150 6500 4300 6500
+Wire Wire Line
+	4300 6500 4300 6300
+Connection ~ 3150 6000
+Wire Wire Line
+	3150 6000 3200 6000
 $EndSCHEMATC

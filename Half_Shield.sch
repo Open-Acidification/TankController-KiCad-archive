@@ -1089,7 +1089,7 @@ F 3 "~" H 1450 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1950 5800 1450 5800
+	1950 5800 1550 5800
 Wire Wire Line
 	1450 6100 1450 6300
 Wire Wire Line
@@ -1212,4 +1212,22 @@ Wire Wire Line
 Connection ~ 3150 6000
 Wire Wire Line
 	3150 6000 3200 6000
+$Comp
+L Device:R_US R?
+U 1 1 5C7BAE0F
+P 1700 5600
+F 0 "R?" V 1495 5600 50  0000 C CNN
+F 1 "100k" V 1586 5600 50  0000 C CNN
+F 2 "" V 1740 5590 50  0001 C CNN
+F 3 "~" H 1700 5600 50  0001 C CNN
+	1    1700 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 5600 1850 5600
+Wire Wire Line
+	1550 5600 1550 5800
+Connection ~ 1550 5800
+Wire Wire Line
+	1550 5800 1450 5800
 $EndSCHEMATC
