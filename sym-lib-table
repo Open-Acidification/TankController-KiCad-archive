@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Half_Shield-rescue)(type Legacy)(uri ${KIPRJMOD}/Half_Shield-rescue.lib)(options "")(descr ""))
+  (lib (name AP65111AWU-7)(type Legacy)(uri ${KIPRJMOD}/AP65111AWU-7/AP65111AWU-7.lib)(options "")(descr ""))
 )
