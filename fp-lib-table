@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Bourns_Inductor_SRN6045-4R7Y)(type KiCad)(uri /home/konthank/Downloads/UL_SRN60454R7Y/KiCAD/2019-03-10_00-53-08/footprints.pretty)(options "")(descr "")(disabled))
+  (lib (name Bourns_Inductor_Footprint)(type KiCad)(uri ${KIPRJMOD}/Bourns_Inductor_Footprint)(options "")(descr ""))
+)
