@@ -810,10 +810,6 @@ Wire Wire Line
 	3200 2000 3200 2400
 Wire Wire Line
 	3200 2400 850  2400
-Wire Wire Line
-	3350 1800 3250 1800
-Wire Wire Line
-	3250 1800 3250 2000
 Connection ~ 3250 2000
 Wire Wire Line
 	3250 2000 3200 2000
@@ -1069,10 +1065,6 @@ Wire Wire Line
 	1800 6650 1800 6250
 Connection ~ 2800 6650
 Wire Wire Line
-	3350 2200 3350 2600
-Wire Wire Line
-	3350 2600 4550 2600
-Wire Wire Line
 	4550 2600 4550 5950
 Connection ~ 4550 5950
 Wire Wire Line
@@ -1202,4 +1194,30 @@ Wire Wire Line
 Connection ~ 4400 6650
 Wire Wire Line
 	4400 6650 4550 6650
+$Comp
+L power:GND #PWR0111
+U 1 1 5C8F371B
+P 650 2050
+F 0 "#PWR0111" H 650 1800 50  0001 C CNN
+F 1 "GND" H 655 1877 50  0000 C CNN
+F 2 "" H 650 2050 50  0001 C CNN
+F 3 "" H 650 2050 50  0001 C CNN
+	1    650  2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  2000 650  2000
+Wire Wire Line
+	650  2000 650  2050
+Connection ~ 850  2000
+Wire Wire Line
+	3350 2200 3250 2200
+Wire Wire Line
+	3250 2200 3250 2000
+Wire Wire Line
+	3350 1800 3050 1800
+Wire Wire Line
+	3050 1800 3050 2600
+Wire Wire Line
+	3050 2600 4550 2600
 $EndSCHEMATC
